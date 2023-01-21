@@ -379,12 +379,12 @@ class Products{
                         
                         refrigerator:
                             cout<<"********* Refrigerator Details **********"<<endl;
-                            cout<<"1) Whirpool - ₹40000"<<endl;
-                            cout<<"2) Samsung - ₹35000"<<endl;
-                            cout<<"3) Haier - ₹50000"<<endl;
-                            cout<<"4) VOltas - ₹45000"<<endl;
-                            cout<<"5) Godrej - ₹43000"<<endl;
-                            cout<<"6) Panasonic - ₹39000"<<endl;
+                            cout<<"1) Whirpool - 40000"<<endl;
+                            cout<<"2) Samsung - 35000"<<endl;
+                            cout<<"3) Haier - 50000"<<endl;
+                            cout<<"4) VOltas - 45000"<<endl;
+                            cout<<"5) Godrej - 43000"<<endl;
+                            cout<<"6) Panasonic - 39000"<<endl;
 
                             cout<<"Please enter your choice"<<endl;
                             cin>>product;
@@ -395,7 +395,7 @@ class Products{
                                 cout<<"Enter the amount of product"<<endl;
                                 cin>>quantity;
                                 if(product==1){
-                                    if(ref.check(1,quantity)<quantity){
+                                    if(ref.check(1,quantity)==false){
                                         cout<<"Sorry Whirpool refrigerator is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -403,7 +403,7 @@ class Products{
                                     }
                                     bill+=(quantity*40000);
                                 }else if(product==2){
-                                    if(ref.check(2,quantity)<quantity){
+                                    if(ref.check(2,quantity)==false){
                                         cout<<"Sorry Samsung refrigerator is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -411,7 +411,7 @@ class Products{
                                     }
                                     bill+=(quantity*35000);
                                 }else if(product==3){
-                                    if(ref.check(3,quantity)<quantity){
+                                    if(ref.check(3,quantity)==false){
                                         cout<<"Sorry Haier refrigerator is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -419,7 +419,7 @@ class Products{
                                     }
                                     bill+=(quantity*50000);
                                 }else if(product==4){
-                                    if(ref.check(4,quantity)<quantity){
+                                    if(ref.check(4,quantity)==false){
                                         cout<<"Sorry Voltas refrigerator is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -427,7 +427,7 @@ class Products{
                                     }
                                     bill+=(quantity*45000);
                                 }else if(product==5){
-                                    if(ref.check(5,quantity)<quantity){
+                                    if(ref.check(5,quantity)==false){
                                         cout<<"Sorry Godrej refrigerator is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -435,7 +435,7 @@ class Products{
                                     }
                                     bill+=(quantity*43000);
                                 }else if(product==6){
-                                    if(ref.check(6,quantity)<quantity){
+                                    if(ref.check(6,quantity)==false){
                                         cout<<"Sorry Panasonic refrigerator is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -448,12 +448,12 @@ class Products{
                             
                         washing:
                             cout<<"********* Washing Machine Details **********"<<endl;
-                            cout<<"1) LG - ₹40000"<<endl;
-                            cout<<"2) Samsung - ₹35000"<<endl;
-                            cout<<"3) Haier - ₹50000"<<endl;
-                            cout<<"4) VOltas - ₹45000"<<endl;
-                            cout<<"5) Bosch - ₹43000"<<endl;
-                            cout<<"6) Panasonic - ₹39000"<<endl;
+                            cout<<"1) LG - 40000"<<endl;
+                            cout<<"2) Samsung - 35000"<<endl;
+                            cout<<"3) Haier - 50000"<<endl;
+                            cout<<"4) VOltas - 45000"<<endl;
+                            cout<<"5) Bosch - 43000"<<endl;
+                            cout<<"6) Panasonic - 39000"<<endl;
 
                             cout<<"Please enter your choice"<<endl;
                             cin>>product;
@@ -464,7 +464,7 @@ class Products{
                                 cout<<"Enter the amount of product"<<endl;
                                 cin>>quantity;
                                 if(product==1){
-                                    if(was.check(1,quantity)<quantity){
+                                    if(was.check(1,quantity)==false){
                                         cout<<"Sorry LG Washing Machine is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -472,7 +472,7 @@ class Products{
                                     }
                                     bill+=(quantity*40000);
                                 }else if(product==2){
-                                    if(was.check(2,quantity)<quantity){
+                                    if(was.check(2,quantity)==false){
                                         cout<<"Sorry Samsung Washing Machine is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -480,7 +480,7 @@ class Products{
                                     }
                                     bill+=(quantity*35000);
                                 }else if(product==3){
-                                    if(was.check(3,quantity)<quantity){
+                                    if(was.check(3,quantity)==false){
                                         cout<<"Sorry Haier Washing Machine is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -488,7 +488,7 @@ class Products{
                                     }
                                     bill+=(quantity*50000);
                                 }else if(product==4){
-                                    if(was.check(4,quantity)<quantity){
+                                    if(was.check(4,quantity)==false){
                                         cout<<"Sorry Voltas Washing Machine is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -496,7 +496,7 @@ class Products{
                                     }
                                     bill+=(quantity*45000);
                                 }else if(product==5){
-                                    if(was.check(5,quantity)<quantity){
+                                    if(was.check(5,quantity)==false){
                                         cout<<"Sorry Bosch Washing Machine is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -504,7 +504,7 @@ class Products{
                                     }
                                     bill+=(quantity*43000);
                                 }else if(product==6){
-                                    if(was.check(6,quantity)<quantity){
+                                    if(was.check(6,quantity)==false){
                                         cout<<"Sorry Panasonic Washing Machine is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -517,12 +517,12 @@ class Products{
                             
                         Television:
                             cout<<"********* Television Details **********"<<endl;
-                            cout<<"1) Onida - ₹40000"<<endl;
-                            cout<<"2) Samsung - ₹35000"<<endl;
-                            cout<<"3) LG - ₹50000"<<endl;
-                            cout<<"4) Haier - ₹45000"<<endl;
-                            cout<<"5) Croma - ₹43000"<<endl;
-                            cout<<"6) Panasonic - ₹39000"<<endl;
+                            cout<<"1) Onida - 40000"<<endl;
+                            cout<<"2) Samsung - 35000"<<endl;
+                            cout<<"3) LG - 50000"<<endl;
+                            cout<<"4) Haier - 45000"<<endl;
+                            cout<<"5) Croma - 43000"<<endl;
+                            cout<<"6) Panasonic - 39000"<<endl;
 
                             cout<<"Please enter your choice"<<endl;
                             cin>>product;
@@ -533,7 +533,7 @@ class Products{
                                 cout<<"Enter the amount of product"<<endl;
                                 cin>>quantity;
                                 if(product==1){
-                                    if(tel.check(1,quantity)<quantity){
+                                    if(tel.check(1,quantity)==false){
                                         cout<<"Sorry Onida Television is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -541,7 +541,7 @@ class Products{
                                     }
                                     bill+=(quantity*40000);
                                 }else if(product==2){
-                                    if(tel.check(2,quantity)<quantity){
+                                    if(tel.check(2,quantity)==false){
                                         cout<<"Sorry Samsung Television is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -549,7 +549,7 @@ class Products{
                                     }
                                     bill+=(quantity*35000);
                                 }else if(product==3){
-                                    if(tel.check(3,quantity)<quantity){
+                                    if(tel.check(3,quantity)==false){
                                         cout<<"Sorry LG Television is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -558,7 +558,7 @@ class Products{
                                     
                                     bill+=(quantity*50000);
                                 }else if(product==4){
-                                    if(tel.check(4,quantity)<quantity){
+                                    if(tel.check(4,quantity)==false){
                                         cout<<"Sorry Haier Television is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -567,7 +567,7 @@ class Products{
                                     
                                     bill+=(quantity*45000);
                                 }else if(product==5){
-                                    if(tel.check(5,quantity)<quantity){
+                                    if(tel.check(5,quantity)==false){
                                         cout<<"Sorry Croma Television is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -575,7 +575,7 @@ class Products{
                                     }
                                     bill+=(quantity*43000);
                                 }else if(product==6){
-                                    if(tel.check(6,quantity)<quantity){
+                                    if(tel.check(6,quantity)==false){
                                         cout<<"Sorry Panasonic Television is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -589,12 +589,12 @@ class Products{
                             
                         microwave:
                             cout<<"********* Microwave Details **********"<<endl;
-                            cout<<"1) LG - ₹40000"<<endl;
-                            cout<<"2) Samsung - ₹35000"<<endl;
-                            cout<<"3) Haier - ₹50000"<<endl;
-                            cout<<"4) Croma - ₹45000"<<endl;
-                            cout<<"5) IFB - ₹43000"<<endl;
-                            cout<<"6) Elica - ₹39000"<<endl;
+                            cout<<"1) LG - 40000"<<endl;
+                            cout<<"2) Samsung - 35000"<<endl;
+                            cout<<"3) Haier - 50000"<<endl;
+                            cout<<"4) Croma - 45000"<<endl;
+                            cout<<"5) IFB - 43000"<<endl;
+                            cout<<"6) Elica - 39000"<<endl;
 
                             cout<<"Please enter your choice"<<endl;
                             cin>>product;
@@ -605,7 +605,7 @@ class Products{
                                 cout<<"Enter the amount of product"<<endl;
                                 cin>>quantity;
                                 if(product==1){
-                                    if(mic.check(1,quantity)<quantity){
+                                    if(mic.check(1,quantity)==false){
                                         cout<<"Sorry LG Microwave is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -613,7 +613,7 @@ class Products{
                                     }
                                     bill+=(quantity*40000);
                                 }else if(product==2){
-                                    if(mic.check(2,quantity)<quantity){
+                                    if(mic.check(2,quantity)==false){
                                         cout<<"Sorry Samsung Microwave is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -622,7 +622,7 @@ class Products{
 
                                     bill+=(quantity*35000);
                                 }else if(product==3){
-                                    if(mic.check(3,quantity)<quantity){
+                                    if(mic.check(3,quantity)==false){
                                         cout<<"Sorry Haier Microwave is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -631,7 +631,7 @@ class Products{
                                     
                                     bill+=(quantity*50000);
                                 }else if(product==4){
-                                    if(mic.check(4,quantity)<quantity){
+                                    if(mic.check(4,quantity)==false){
                                         cout<<"Sorry Croma Microwave is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -639,7 +639,7 @@ class Products{
                                     }
                                     bill+=(quantity*45000);
                                 }else if(product==5){
-                                    if(mic.check(5,quantity)<quantity){
+                                    if(mic.check(5,quantity)==false){
                                         cout<<"Sorry IFB Microwave is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -647,7 +647,7 @@ class Products{
                                     }
                                     bill+=(quantity*43000);
                                 }else if(product==6){
-                                    if(mic.check(6,quantity)<quantity){
+                                    if(mic.check(6,quantity)==false){
                                         cout<<"Sorry Elica Microwave is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -662,11 +662,11 @@ class Products{
                         air:
                             cout<<"********* Air Conditioner Details **********"<<endl;
                             cout<<"1) LG - ₹40000"<<endl;
-                            cout<<"2) Lloyd - ₹35000"<<endl;
-                            cout<<"3) Daikin - ₹50000"<<endl;
-                            cout<<"4) Rittal - ₹45000"<<endl;
-                            cout<<"5) Hisene - ₹43000"<<endl;
-                            cout<<"6) Voltas - ₹39000"<<endl;
+                            cout<<"2) Lloyd - 35000"<<endl;
+                            cout<<"3) Daikin - 50000"<<endl;
+                            cout<<"4) Rittal - 45000"<<endl;
+                            cout<<"5) Hisene - 43000"<<endl;
+                            cout<<"6) Voltas - 39000"<<endl;
 
                             cout<<"Please enter your choice"<<endl;
                             cin>>product;
@@ -677,7 +677,7 @@ class Products{
                                 cout<<"Enter the amount of product"<<endl;
                                 cin>>quantity;
                                 if(product==1){
-                                    if(air.check(1,quantity)<quantity){
+                                    if(air.check(1,quantity)==false){
                                         cout<<"Sorry LG Air Conditioner is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -686,7 +686,7 @@ class Products{
 
                                     bill+=(quantity*40000);
                                 }else if(product==2){
-                                    if(air.check(2,quantity)<quantity){
+                                    if(air.check(2,quantity)==false){
                                         cout<<"Sorry Lloyd Air Conditioner is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -695,7 +695,7 @@ class Products{
 
                                     bill+=(quantity*35000);
                                 }else if(product==3){
-                                    if(air.check(3,quantity)<quantity){
+                                    if(air.check(3,quantity)==false){
                                         cout<<"Sorry Daikin Air Conditioner is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -704,7 +704,7 @@ class Products{
 
                                     bill+=(quantity*50000);
                                 }else if(product==4){
-                                    if(air.check(4,quantity)<quantity){
+                                    if(air.check(4,quantity)==false){
                                         cout<<"Sorry Rittel Air Conditioner is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -713,7 +713,7 @@ class Products{
 
                                     bill+=(quantity*45000);
                                 }else if(product==5){
-                                    if(air.check(5,quantity)<quantity){
+                                    if(air.check(5,quantity)==false){
                                         cout<<"Sorry Hisene Air Conditioner is out of stock"<<endl;
                                         goto item;
                                     }else{
@@ -721,7 +721,7 @@ class Products{
                                     }
                                     bill+=(quantity*43000);
                                 }else if(product==6){
-                                    if(air.check(6,quantity)<quantity){
+                                    if(air.check(6,quantity)==false){
                                         cout<<"Sorry Voltas Air Conditioner is out of stock"<<endl;
                                         goto item;
                                     }else{
